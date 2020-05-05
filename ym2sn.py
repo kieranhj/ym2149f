@@ -76,7 +76,7 @@ ENABLE_BIN = False          # enable output of a test 'bin' file (ie. the raw SN
 # Periodic noise based bass settings (default)
 ENABLE_BASS_TONES = True    # enables low frequency tones to be simulated with periodic noise
 ENABLE_BASS_BIAS = True     # enables bias to the most active bass channel when more than one low frequency tone is playing at once.
-FORCE_BASS_CHANNEL = -1     # set this to 0,1 or 2 (A/B/C) or -1, to make a specific channel always take the bass frequency. Not an elegant or useful approach.
+FORCE_BASS_CHANNEL = 0     # set this to 0,1 or 2 (A/B/C) or -1, to make a specific channel always take the bass frequency. Not an elegant or useful approach.
 
 
 # Software bass settings (overrides periodic noise bass)
