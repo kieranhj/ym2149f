@@ -907,7 +907,7 @@ class YmReader(object):
             # some tunes have incorrect data stream lengths, handle that here.
             if r < len(regs) and i < self.__header['nb_frames'] and i < len(regs[r]) :
                 n = regs[r][i]
-                return int(n) #int( struct.unpack('B', n)[0] ) #int(n) #int(binascii.hexlify(n), 16)
+                return int(binascii.hexlify(n), 16) #int(n) #int( struct.unpack('B', n)[0] ) #int(n) #int(binascii.hexlify(n), 16)
             else:
                 print("ERROR: Register out of range - bad sample ID or corrupt file?")
                 return 0
